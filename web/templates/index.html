@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeguraNois Security</title>
+  </head>
+  <body>
+    <header>
+      <h1>SeguraNois Security</h1>
+      <nav>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('login.login') }}">Login</a></li>
+        <li><a href="{{ url_for('login.cadastro') }}">Cadastro</a></li>
+        <li><a href="{{ url_for('produtos.produtos') }}">Produtos</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+          <li>Instalação de sensores de movimento personalizados</li>
+        </ul>
+      </section>
+      <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+          A Empresa de Segurança é líder em soluções de segurança desde 2005.
+          Com uma equipe de profissionais altamente treinados e tecnologia de
+          ponta, oferecemos serviços de segurança personalizados para atender às
+          necessidades específicas de cada cliente.
+        </p>
+        <p>
+          Os sensores de movimentos que instalamos são totalmente
+          personalisáveis para atender o gosto do cliente. Exemplo: o cliente
+          poderá solicitar um sensor que poderá se parecer com qualquer coisa
+          que le vem a mente, e também o efeito sonoro. Exemplo: O cliente,
+          amante de gatinhos, poderá solicitar um sensor em formato de gatinho,
+          bem como um miado para o efeito sonoro.
+        </p>
+        <p>
+          Nosso compromisso é garantir a segurança de nossos clientes e de suas
+          propriedades, fornecendo soluções eficazes e confiáveis.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>Empresa de Segurança &copy; 2023</p>
+    </footer>
+  </body>
+</html>
